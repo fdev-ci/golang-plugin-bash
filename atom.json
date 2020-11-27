@@ -1,0 +1,26 @@
+{
+  "atomCode": "goBash",
+  "execution": {
+    "language": "golang",
+    "packagePath": "goBash",
+    "demands": [
+      "chmod +x goBash"
+    ],
+    "target": "./goBash"
+  },
+  "input": {
+    "script": {
+      "label": "脚本内容",
+      "default": "",
+      "placeholder": "欢迎词",
+      "type": "vuex-input",
+      "desc": "脚本内容",
+      "required": true,
+      "disabled": false,
+      "hidden": false,
+      "isSensitive": false
+    }
+  },
+  "output": {
+  }
+}
