@@ -47,7 +47,7 @@ func run()  {
 
 	// 业务逻辑
 	log.Info("start build")
-	err := build(paramData.Script)
+	err := Build(paramData.Script)
 	if err != nil {
 		api.FinishBuildWithErrorCode(api.StatusError,err.Error(),1)
 	} else {
@@ -56,11 +56,12 @@ func run()  {
 	log.Info("build done")
 }
 
-func build(script string) error {
+func Build(script string) error {
 
 	cmd := exec.Command("sh", "-c",script)
 	var out bytes.Buffer
 	cmd.Stdout = &out
+	cmd.Stderr = &out
 
 	err := cmd.Start()
 	if err != nil {
