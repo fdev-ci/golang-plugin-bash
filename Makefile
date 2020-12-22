@@ -5,7 +5,7 @@ GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
 BINARY_NAME=goBash
 RELEASE_NAME=goBash.zip
-CONFIG_NAME=atom.json
+CONFIG_NAME=plugin.json
 
 all: build
 build:

@@ -1,5 +1,5 @@
 {
-  "atomCode": "goBash",
+  "pluginCode": "goBash",
   "execution": {
     "language": "golang",
     "packagePath": "goBash",
